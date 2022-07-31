@@ -1,0 +1,76 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #f7f7f7;
+  color: #777;
+  font-family: "Myriad Web Pro", Helvetica, Sans-Serif;
+  font-size: .875em;
+}
+
+/* CONTAINERS */
+main{
+  margin: auto;
+  width: 380px;
+}
+section{
+  background: #fff;
+  border-radius: .25em;
+  box-shadow: 0 .15em .175em hsla(0,0%,0%,.1);
+  margin: 1.5em;
+  overflow: hidden;
+}
+figure{
+  height: 12.5em;
+}
+article{
+  padding: 2em;
+}
+
+/* IMAGE */
+img{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* TYPOGRAPHY */
+h1{
+  font-size: 2em;
+  letter-spacing: -.05em;
+  line-height: 1;
+  margin: .25em 0;
+}
+p{
+  line-height: 1.4;
+}
+span{
+  color: #bbb;
+  font-size: .75em;
+  text-transform: uppercase;
+  word-spacing: .0625em;
+}
+
+.searchLoca{
+  width: 12rem;
+}
+
+@supports (display: grid){
+
+
+  @media only screen and (min-width: 768px){
+    main{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-gap: 1.5em;
+      max-width: 1140px;
+      padding: 1.5em;
+    }
+
+    section{
+      margin: 0;
+    }
+  }
+}
